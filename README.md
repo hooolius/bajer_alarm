@@ -5,3 +5,4 @@ Bajer alarm er et script der minder dig om det vigtigste i livet - at det er tid
 
 ## Krav
 ![xteddy](http://weber.itn.liu.se/~stegu/xteddy/)
+![mpg123](https://mpg123.de/)
