@@ -15,11 +15,11 @@ trap "kill $sound 2> /dev/null" EXIT
 
 while kill -0 $sound 2> /dev/null; do
     echo $dir
-    xrandr --output $display --gamma 4.0:0.5:0.5
+    xgamma -display :0 -rgamma 4.0
     xteddy -f $dir/BAJER.png -geometry 1x1+$offsetx+$offsety &
     sleep .5
     kill $!
-    xrandr --output LVDS1 --gamma 1:1:1
+    xgamma -display :0 -rgamma 1.0
     sleep .5
 done
 
